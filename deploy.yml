@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demosite-deployment
+  name: jaggu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: demosite
+      app: jaggusite
   template:
     metadata:
       labels:
-        app: demosite
+        app: jaggusite
     spec:
       containers:
-      - name: demosite
-        image: kalyanproject.azurecr.io/project-abc:latest
+      - name: jaggusite
+        image: kalyanproject.azurecr.io/jaggusite:latest
         ports:
         - containerPort: 80
