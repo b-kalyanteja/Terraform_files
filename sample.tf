@@ -1,4 +1,4 @@
 resource "local_file" "sample" {
-    filename = "/abc.txt"
-    content = "Hello there, this is my ne fil !"
+    filename = "/home/kalyan/new.txt"
+    content = "Hello there, this is my new file !"
 }
