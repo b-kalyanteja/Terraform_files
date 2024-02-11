@@ -1,5 +1,5 @@
 resource "local_file" "abc_file" {
-    filename = "/abc.txt"
+    filename = "/home/kalyan/new_abc.txt"
     content = "Hello there, this is my new file !"
 }
 
