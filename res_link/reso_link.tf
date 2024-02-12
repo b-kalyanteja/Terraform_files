@@ -1,6 +1,6 @@
 resource "local_file" "abc_file" {
     filename = var.filenm
-    content = " th first person name is ${random_pet.pet1.id}. and the second person code word is ${random_pet.pet2.id}
+    content = " th first person name is ${random_pet.pet1.id}. and the second person code word is ${random_pet.pet2.id}"
 }
 
 resource "random_pet""pet1" {
@@ -12,6 +12,6 @@ resource "random_pet""pet1" {
 
 resource "random_pet""pet2" {
     prefix = "Mrs"
-    separator ="."
+    separator =" "
     length = 1
 }
