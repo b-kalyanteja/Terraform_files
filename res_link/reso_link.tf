@@ -15,3 +15,8 @@ resource "random_pet""pet2" {
     separator =" "
     length = 1
 }
+
+output abc{
+    value = random_pet.pet1.id
+    description = the name of pets is output
+}
