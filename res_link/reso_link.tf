@@ -18,5 +18,5 @@ resource "random_pet""pet2" {
 
 output abc{
     value = random_pet.pet1.id
-    description = the name of pets is output
+    description = "the name of pets is output"
 }
