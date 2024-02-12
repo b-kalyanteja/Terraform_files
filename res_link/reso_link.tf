@@ -1,6 +1,6 @@
 resource "local_file" "abc_file" {
     filename = var.filenm
-    content = var.content
+    content = " th first person name is ${random_pet.pet1.id}. and the second person code word is ${random_pet.pet2.id}
 }
 
 resource "random_pet""pet1" {
