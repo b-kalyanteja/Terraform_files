@@ -6,3 +6,6 @@ resource "local_file" "sample" {
         #ignore_changes = all
     }
 }
+resource "local_file" "beta"{
+    filename = "/home/kalyan/aaa.txt"
+    }
