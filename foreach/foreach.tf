@@ -1,5 +1,6 @@
 resource "local_file" "sample" {
-    filename = var.fn[count.index]
+    filename = each.value
+    for_each = var.fn
     content = data.local_file.beta.content
     count = 3
     lifecycle {
