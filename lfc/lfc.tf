@@ -3,7 +3,7 @@ resource "local_file" "sample" {
     content = "Hello there, this is my new fouth updated . to prevent destroy "
     lifecycle {
         create_before_destroy = true
-        ignorechanges = [
+        ignore_changes = [
             content
         ]
     }
