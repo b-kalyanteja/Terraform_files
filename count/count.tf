@@ -1,9 +1,7 @@
 resource "local_file" "sample" {
-    filename = "/home/kalyan/terra/lfc/apc.txt"
+    filename = [/home/kalyan/terra/lfc/aaa.txt, /home/kalyan/terra/lfc/bbb.txt, /home/kalyan/terra/lfc/ccc.txt ]
     content = data.local_file.beta.content
-    lifecycle {
-        ignore_changes = []
-    }
+    
 }
 data "local_file" "beta"{
     filename = "/home/kalyan/aaa.txt"
