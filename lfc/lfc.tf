@@ -3,7 +3,7 @@ resource "local_file" "sample" {
     content = data.local_file.beta.content
     lifecycle {
         create_before_destroy = true
-        #ignore_changes = all
+        ignore_changes = all
     }
 }
 data "local_file" "beta"{
