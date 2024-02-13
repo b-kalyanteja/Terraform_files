@@ -4,7 +4,7 @@ resource "local_file" "sample" {
     lifecycle {
         create_before_destroy = true
         ignore_changes = [
-            content
+            filename
         ]
     }
 }
