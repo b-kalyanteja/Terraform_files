@@ -1,5 +1,5 @@
 resource "local_file" "sample" {
-    filename = ["/home/kalyan/terra/count/a.txt", "/home/kalyan/terra/count/b.txt", "/home/kalyan/terra/count/c.txt"]
+    filename = var.fn
     content = data.local_file.beta.content
     count = 3
     
