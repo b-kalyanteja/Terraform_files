@@ -1,6 +1,6 @@
 variable "fn" {
   type = list
-  default = ["/home/kalyan/terra/lfc/xxx.txt", "/home/kalyan/terra/lfc/yyy.txt", "/home/kalyan/terra/lfc/zzz.txt"]
+  default = ["/home/kalyan/terra/count/xxx.txt", "/home/kalyan/terra/count/yyy.txt", "/home/kalyan/terra/count/zzz.txt"]
 }
 
 
