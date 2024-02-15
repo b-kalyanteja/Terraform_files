@@ -9,7 +9,8 @@ terraform {
 
 provider "azurerm" {
   features {}
-  tenant_id = "4e21a9c0-bf13-4006-95a1-b6e3b71c79eb"  
+  tenant_id = "4e21a9c0-bf13-4006-95a1-b6e3b71c79eb"
+  subscription_id = "afee5acf-48f0-4934-9362-dc590c52f39f"
 }
 
 resource "azurerm_storage_account" "example" {
