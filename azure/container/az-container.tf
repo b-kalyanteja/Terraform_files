@@ -9,6 +9,6 @@ terraform {
 
 resource "azurerm_storage_container" "ctr1" {
   name                  = "statefiles"
-  storage_account_name  = byandforterraform
+  storage_account_name  = "byandforterraform"
   container_access_type = "blob"  
 } 
