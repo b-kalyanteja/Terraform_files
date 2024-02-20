@@ -3,12 +3,13 @@ terraform {
     storage_account_name = "byandforterraform"
     container_name       = "statefiles"
     key                  = "terraform.tfstate"
-    sas_token            = "?sv=2022-11-02&ss=bfqt&srt=sco&sp=rwdlacupiytfx&se=2024-02-20T02:57:10Z&st=2024-02-19T18:57:10Z&spr=https,http&sig=zJtEucmeHbHrLD4QJeI4CJpAU0O77umH4%2FSV%2Bokcp8o%3D"
+    sas_token            = "sp=r&st=2024-02-20T14:44:14Z&se=2024-02-20T14:50:59Z&sv=2022-11-02&sr=c&sig=s9G8goZKUBLq%2F6qQVpLToTsKBbwAJkUwKIJsrQTXA74%3D"
+    lease_id             = "c07e4f32-3a99-4d8a-abee-b15587416229"
   }
 }
 
 
 resource "local_file" "sample" {
     filename = "D:/new.txt"
-    content = "second time tested and working \n By kalyan "
+    content = var.content
 }
