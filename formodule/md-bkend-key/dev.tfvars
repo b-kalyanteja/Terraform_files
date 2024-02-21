@@ -1,2 +1,2 @@
 
-content= "File created as module from main.tf"
+content= "File created as module from main.tf ---- dictionary"
