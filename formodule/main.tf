@@ -1,3 +1,3 @@
-module "file" {
-  source = "../md-bkend-key" 
+module "newfile" {
+  source = "/md-bkend-key" 
 }
