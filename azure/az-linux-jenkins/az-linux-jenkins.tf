@@ -9,7 +9,7 @@ terraform {
 
 resource "azurerm_virtual_network" "vnet" {
   name                = "network"
-  address_space       = ["10.3.0.0/16"]
+  address_space       = ["10.0.0.0/16"]
   location            = var.loc
   resource_group_name = var.rgname
 }
@@ -46,6 +46,7 @@ resource "azurerm_linux_virtual_machine" "vmware" {
   location            = var.loc
   resource_group_name = var.rgname
   size                = "Standard_DS1_v2"
+  disable_password_authentication = false
 
   admin_username = "kalyan"
   admin_password = "apple@123456"

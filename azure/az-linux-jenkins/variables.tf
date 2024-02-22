@@ -1,6 +1,6 @@
 variable "rgname" {
  type = string
- default = "vmvare-rg"
+ default = "vmware-rg"
 }
 
 
