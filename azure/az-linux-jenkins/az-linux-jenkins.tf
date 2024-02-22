@@ -7,11 +7,6 @@ terraform {
   }
 }
 
-provider "azurerm" {
-  features {}
-}
-
-
 resource "azurerm_virtual_network" "vnet" {
   name                = "network"
   address_space       = ["10.3.0.0/16"]
@@ -23,7 +18,7 @@ resource "azurerm_subnet" "subnet" {
   name                 = "internal"
   address_prefixes     = ["10.0.2.0/24"]
   resource_group_name  = var.rgname
-  virtual_network_name = azurerm_virtual_network.example.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
 }
 
 resource "azurerm_public_ip" "ip" {
