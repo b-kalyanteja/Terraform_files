@@ -1,4 +1,10 @@
-provider "azurerm" {}
+provider "azurerm" {
+  version = "~> 2.0"
+  
+  features {}
+  
+  subscription_id = "YOUR_SUBSCRIPTION_ID"
+}
 
 variable "acr_resource_group_name" {
   description = "The name of the resource group where ACR is created."

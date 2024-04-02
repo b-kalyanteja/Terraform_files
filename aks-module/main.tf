@@ -1,3 +1,13 @@
+provider "azurerm" {
+  version = "~> 2.0"
+  
+  features {}
+  
+  subscription_id = "b5e6643b-f1e3-47cf-b754-afa812bad9e1"
+}
+
+
+
 module "acr" {
   source              = "./module_basic_acr"
   resource_group_name = "cloud_kalyan"
