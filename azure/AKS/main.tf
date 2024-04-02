@@ -50,5 +50,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
 
   tags = {
     Environment = "dev"
+    user        = "kalyan"
+    mode        = "Terraform"
   }
 }
