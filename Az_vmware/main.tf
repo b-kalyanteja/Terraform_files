@@ -13,9 +13,9 @@ provider "azurerm" {
 }
 
 
-module "acr" {
-  source              = "./module_basic_acr"
-  resource_group_name = "cloud_kalyan"
+module "rg" {
+  source              = "./module_rg"
+  resource_group_name = "terra_module"
   acr_name            = "bullakalyanacr"
   location            = "eastus"
 }
@@ -28,10 +28,15 @@ module "aks" {
 }
 
 module "local_file" {
-    source  = "./module_local_file"
-    content = module.acr.server_name  # from the module "acr" we have to take output "server_name". 
-    # so sgo to module.acr 's source. In there we have output
-
+    source  = "./module_local_file" 
+    content = module.acr.server_name
     # Optionally, you can specify a different file path if needed
     file_path = "D:/server_name.txt"
+}
+
+module "abc" {
+  source = "./module_vnet"
+  
+
+  
 }
