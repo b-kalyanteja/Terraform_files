@@ -1,5 +1,5 @@
 variable "file_path" {
-    default     = "D:/new.txt" # Default to D drive
+    default     = "D:/abc.txt" # Default to D drive
 }
 
 variable "content" {
