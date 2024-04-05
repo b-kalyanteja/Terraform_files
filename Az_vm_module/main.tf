@@ -25,10 +25,9 @@ module "vnet" {
   address_space           = ["10.5.0.0/16"]
   location                = "northeurope"
 }
-
+#module to create Vnet and subnets
 module "vms" {
   source                  = "./module_vms"
-
   location                = "eastus"
 }
 module "local_file" {
